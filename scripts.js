@@ -62,11 +62,37 @@ let data8 = {
 
 $("#woman").attr("src", data8.photo);
 
+let current = 0;
+
+
+let loadCurrent = (number) => {
+  $('#current').text(number);
+}
+
+$('#previous').click(() => {
+  if(current > 1) {
+    current--;  
+  }
+  loadCurrent(current);
+});
+
+$('#next').click(() => {
+  if(current < 5) { 
+    current++; 
+  }
+  loadCurrent(current);
+});
+
+loadCurrent(current);
+
+
+
 
 /*let currentPhoto = 0;
-let imagesData = [photo: "./photos/cake.jfif",];
+let imagesData = ["cake"];
 
 $("#cake").attr("src", imagesData[currentPhoto].photo);*/
+
 
 //<img src="./photos/woman2.jfif" alt="" id="woman2"
 //<img src="./photos/cake.jfif" alt="" id="cake"></img>
@@ -76,3 +102,5 @@ $("#cake").attr("src", imagesData[currentPhoto].photo);*/
 //<img src="./photos/manga_book.jfif" alt="" id="manga_book"></img>
 //<img src="./photos/nature.jfif" alt="" id="nature">
 //<img src="./photos/woman.jfif" alt="" id="woman">
+
+//<img src="./photos/arrow.svg" alt="" id="arrow_left"></img>
