@@ -17,6 +17,15 @@ img {
     transform: rotate(0.5turn);
 }
 
-/*#cake {
-
-}
+#container {
+    display: flex; 
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background: lime;
+    text-align: center;
+    line-height: 100px;
+  }
