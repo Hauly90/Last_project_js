@@ -1,80 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-   <div id="container">
-    <div id="previous" class="box"></div>
-    <img id="cake">
-    <div class="box" id="current">
-        <h2 id="cake-title"></h2>
-        <p id="cake-description"></p>
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <img src="/img/cake.jfif" style="width:30%">
+        </div>
+
+        <!-- Both buttons -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(+1)">&#10095;</button>
     </div>
-    <div id="next" class="box">></div>
-   </div>
 
-    <img src="./photos/arrow.svg" alt="" id="arrow_left">
-    <img id="car">
-    <div class="gray-container">
-        <h3 id="car-title"></h3>
-        <p id="car-description"></p>
-    </div>
-    <img src="./photos/arrow.svg" alt="" id="arrow_right">
-
-    <img src="./photos/arrow.svg" alt="" id="arrow_left">
-    <img id="food">
-    <div class="gray-container">
-        <h4 id="food-title"></h4>
-        <p id="food-description"></p>
-    </div>
-    <img src="./photos/arrow.svg" alt="" id="arrow_right">
-
-    <img src="./photos/arrow.svg" alt="" id="arrow_left">
-    <img id="chess">
-    <div class="gray-container">
-        <h5 id="chess-title"></h5>
-        <p id="chess-description"></p>
-    </div>
-    <img src="./photos/arrow.svg" alt="" id="arrow_right">
-
-    <img src="./photos/arrow.svg" alt="" id="arrow_left">
-    <img id="manga_book">
-    <div class="gray-container">
-        <h6 id="manga_book-title"></h6>
-        <p id="manga_book-description"></p>
-    </div>
-    <img src="./photos/arrow.svg" alt="" id="arrow_right">
-
-    <img src="./photos/arrow.svg" alt="" id="arrow_left">
-    <img id="nature">
-    <div class="gray-container">
-        <h7 id="nature-title"></h7>
-        <p id="nature-description"></p>
-    </div>
-    <img src="./photos/arrow.svg" alt="" id="arrow_right">
-
-    <img src="./photos/arrow.svg" alt="" id="arrow_left">
-    <img id="woman">
-    <div class="gray-container">
-        <h8 id="woman-title"></h8>
-        <p id="woman-description"></p>
-    </div>
-    <img src="./photos/arrow.svg" alt="" id="arrow_right">
-
-    <img src="./photos/arrow.svg" alt="" id="arrow_left">
-    <img id="woman2">
-    <div class="gray-container">
-        <h1 id="woman2-title"></h1>
-        <p id="woman2-description"></p>
-    </div>
-    <img src="./photos/arrow.svg" alt="" id="arrow_right">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-
+    <script src="script.js"></script>
 </body>
+
 </html>
